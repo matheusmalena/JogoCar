@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@300&display=swap');
+
 html, body {
-  margin: 0;
+  margin: 5% 20%;
+  background-color: black;
+  
   padding: 0;
+  align-items: center;
 }
 canvas {
   display: block;
+}
+
+.apresentacao{
+  align-items: center;
+}
+
+.titulo{
+  font-size: 30px;
+  font-family: 'Bungee Spice', cursive;
+  text-align: center;
 }
