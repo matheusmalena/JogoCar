@@ -1,2 +1,2 @@
 # JogoCar
- Jogo de accro em 2D
+Esse é um jogo em 2d que foi feito durante o curso de JavaScript da Alura.
