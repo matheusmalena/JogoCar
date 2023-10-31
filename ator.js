@@ -44,7 +44,7 @@ function voltaAtorPosicaoInicial() {
 function incluiPontos(){
   textAlign(CENTER);
   textSize(20);
-  fill(color(255, 240, 60));
+  fill(color(255,140,0));
   text(pontos, width / 2, 25);
 }
 
