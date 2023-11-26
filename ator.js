@@ -3,6 +3,10 @@ let xAtor = 200;
 let yAtor = 370;
 let colisao = false;
 
+// Limites laterais
+let limiteEsquerdo = 0;
+let limiteDireito = 570;
+
 //pontos
 let pontos = 0
 
@@ -19,6 +23,18 @@ function movimentaAtor(){
   }
   if (yAtor > 370){
     voltaAtorPosicaoInicial()
+  }
+  if (keyIsDown(RIGHT_ARROW)) {
+    xAtor = xAtor + 3;
+  }
+  if (keyIsDown(LEFT_ARROW)) {
+    xAtor = xAtor - 3;
+  }
+   // Verifica limites laterais
+   if (xAtor < limiteEsquerdo) {
+    xAtor = limiteEsquerdo;
+  } else if (xAtor > limiteDireito) {
+    xAtor = limiteDireito;
   }
 }
 
@@ -39,6 +55,7 @@ function verificaColisao() {
 
 function voltaAtorPosicaoInicial() {
   yAtor = 370
+  xAtor = 200
 }
 
 function incluiPontos(){
